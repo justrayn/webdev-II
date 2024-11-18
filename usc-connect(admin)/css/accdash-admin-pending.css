@@ -1,0 +1,108 @@
+/* Global reset and base styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Helvetica, Arial, Sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+} 
+
+
+.container {
+    display: flex; 
+    width: 100%;
+    height: 100vh;
+    background-color: #0F0914;
+}
+
+/* Left sidebar */
+
+.sidebar li:first-child a,
+.sidebar li:hover a {
+    color: #b2d12e;
+    text-decoration: underline;
+}
+
+/* Topbar */
+.topbar li {
+    display: inline-block;
+    position: relative;
+    top:50px;
+}
+
+.topbar li a {
+    display: block; 
+    padding: 10px 50px;
+    color: white;
+    background-color: #0A101D;
+    text-decoration: none;
+    transition: background-color 0.3s; 
+}
+
+.topbar li a:hover,
+.topbar li:nth-child(3) a {
+    background-color: #b2d12e; /* Background color on hover or for the first child */
+}
+/* Titles */
+.ongoing, .upcoming {
+    color: white;
+    position: relative;
+    top: 90px;
+    left: 15px;
+    font-size: 20px;
+}
+
+/* Table styling */
+.scndtopbar {
+    position: relative;
+    top: 65px;
+    width: 1000px;
+    table-layout: fixed;
+    border-collapse: separate; 
+    border-spacing: 0 10px;
+    margin-top: 40px;
+}
+
+.scndtopbar th, .scndtopbar td {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #40444B;
+}
+
+.scndtopbar th {
+    border-right: 1px solid #FFFFFF;
+}
+
+.scndtopbar th:last-child {
+    border-right: none; 
+}
+.scndtopbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Specific widths for the first column */
+.scndtopbar th:first-child, .scndtopbar td:first-child {
+    width: 50%; 
+    text-align: left;
+    padding-left: 20px;
+}
+
+.scndtopbar td:first-child img {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+}
+
+/* Hide upcoming events table header */
+.upcoming-events thead {
+    display: none;
+}
+

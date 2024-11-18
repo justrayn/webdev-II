@@ -1,0 +1,29 @@
+body {
+    font-family: Roboto, Helvetica, Arial, Sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.leftmain {
+    position: relative;
+    top: 90px;
+    left: 50px;
+    width: 20%; 
+    height:50%;
+    padding: 10px;
+}
+
+
+.sidebar li {
+    list-style-type: none;
+    padding: 10px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.sidebar a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar li:last-child {
+    margin-top: 50px; /* adjust the margin value as needed */
+}

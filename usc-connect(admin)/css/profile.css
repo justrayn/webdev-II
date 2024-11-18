@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Helvetica, Arial, Sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.ads {
+    width: 100%;
+    height: 40vh;
+    background-color: #f5f5f5;
+}
+
+.profile {
+    display: flex; /* Enable flex layout */
+    width: 100%;
+    height: 70vh;
+    background-color: #0F0914;
+}
+
+/* Style for the left sidebar */
+.leftmain {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 30%; /* Set width of left sidebar */
+    padding: 20px;
+}
+
+.leftmain h2 {
+    margin-left: 10px;
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.dashboard {
+    margin-left: 10px;
+}
+
+.dashboard li {
+    list-style-type: none;
+    padding: 10px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Hover effect for list items */
+.dashboard li:hover a {
+    color: #b2d12e;
+    text-decoration: underline;
+}
+
+/* Style for the active list item */
+.dashboard .active a {
+    color: #b2d12e;
+    text-decoration: underline;
+}
+
+/* General link styles within the dashboard */
+.dashboard a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Style for the right part */
+.rightmain {
+    position: relative;
+    width: 70%; /* Width relative to the container */
+    height: 400px; /* Fixed height */
+    top: 30px; /* Align with left-part */
+    left: 1%; /* Position to the right of left-part */
+    /* border: 5px solid #b2d12e; */
+    
+}
+
+.rightmain h2 {
+    font-size: 40px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    left: 120px;
+}
+
+.rightmain h3 {
+    font-size: 20px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    top: 20px;
+    left: 120px;
+}
+
+
+.infopart{
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    font-size:25px;
+}
+
+.information a{
+    text-decoration: none;
+    color: white;
+}
+
+.information li {
+    padding: 5px;
+    list-style-type: none;
+}
+
+.maincontent{
+    position: absolute;
+    top: 120px;
+    left: 300px;
+    font-size:25px;
+}
+
+.information-content a{
+    text-decoration: none;
+    color: white;
+}
+.information-content li {
+    padding: 5px;
+    list-style-type: none;
+}
+
+.ces{
+    position: absolute;
+    left: 400px;
+    top: 50px;
+}
+.cespoints{
+    position: absolute;
+    color: white;
+    left: 90px;
+    top: 0px;
+}
+
+.editpart{
+    position: relative;
+    top: 230px;
+    left: 125px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #b2d12e;
+    background:#000000 ;
+}
+
+.editpart:hover{ 
+    position: relative;
+    top: 230px;
+    left: 125px;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #b2d12e;
+    background:#b2d12e ;
+    transition: bakground 0.3s;
+}
+
+
+.editpart a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    margin-top: 8px;
+    justify-content: center; 
+    align-items: center;     
+}
+
