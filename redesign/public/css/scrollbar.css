@@ -1,0 +1,33 @@
+.Events-table-container::-webkit-scrollbar {
+    width: 5px; /* Width of the vertical scrollbar */
+}
+
+.Events-table-container::-webkit-scrollbar-track {
+    background: #40444B; /* Background color of the track */
+}
+
+.Events-table-container::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+}
+
+.Events-table-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovering over the thumb */
+}
+
+.Accounts-table-container::-webkit-scrollbar {
+    width: 5px; /* Width of the vertical scrollbar */
+}
+
+.Accounts-table-container::-webkit-scrollbar-track {
+    background: #40444B; /* Background color of the track */
+}
+
+.Accounts-table-container::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+}
+
+.Accounts-table-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color when hovering over the thumb */
+}
