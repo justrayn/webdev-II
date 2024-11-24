@@ -1,0 +1,63 @@
+.topbar li {
+    display: inline-block;
+    position: relative;
+    top: 200px;
+    left: 150px;
+}
+
+.topbar li a {
+    display: block; 
+    padding: 10px 50px;
+    color: white;
+    background-color: #0A101D;
+    text-decoration: none;
+    transition: background-color 0.3s; 
+}
+
+.topbar li a:hover {
+    background-color: #b2d12e;
+}
+
+.topbar li a.active {
+    background-color: #b2d12e;
+}
+
+//topbar for accounts
+
+.container {
+    position: relative; /* The container is relatively positioned */
+}
+
+.topbar2 {
+    position: absolute; /* The topbar is absolutely positioned relative to the container */
+    top: 150px; /* Moves it 50px down from the top of the container */
+    left: 150px; /* Moves it 50px to the right from the left of the container */
+    padding: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.topbar2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topbar2 li {
+    display: inline-block; /* Make list items display inline */
+    margin: 0 2px; /* Add horizontal spacing between items */
+}
+
+.topbar2 li a {
+    display: block; 
+    padding: 10px 20px;
+    color: white;
+    background-color: #0A101D;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.topbar2 li a:hover,
+.topbar2 li a.active {
+    background-color: #b2d12e;
+}

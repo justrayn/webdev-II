@@ -1,6 +1,3 @@
-<?php
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +9,7 @@
     <link rel="stylesheet" href="../../public/css/scrollbar.css">
     <link rel="stylesheet" href="../../public/css/admin-Events.css">
     <link rel="stylesheet" href="../../public/css/admin-Accounts.css">
-    <link rel="stylesheet" href="../../public/css/topbar.css">
+    <link rel="stylesheet" href="../../public/css/topbars.css">
 </head>
 <body>
     <div class="container">
@@ -63,6 +60,13 @@
         </div>
 
         <div class="Accounts-container">
+        <div class="topbar2">
+            <ul>
+                <li><a href="index.php?acc_filter=allaccs" class="<?php echo ($accountsFilter == 'allaccs') ? 'active' : ''; ?>">All Accounts</a></li>
+                <li><a href="index.php?acc_filter=host" class="<?php echo ($accountsFilter == 'host') ? 'active' : ''; ?>">Host</a></li>
+                <li><a href="index.php?acc_filter=client" class="<?php echo ($accountsFilter == 'client') ? 'active' : ''; ?>">Client</a></li>
+            </ul>
+        </div>
             <h2 id="Accounts-heading">Accounts</h2>
             <div class="Accounts-table-container" id="Accounts-table-container">
                 <table class="Accounts-table">
@@ -90,5 +94,7 @@
             </div>
         </div>
     </div>
+
+    
 </body>
 </html>

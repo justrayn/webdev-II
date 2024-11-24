@@ -1,7 +1,7 @@
 #Accounts-heading {
     position: absolute;
-    top: 50px;
-    left: 160px;
+    top: 100px;
+    left: 150px;
     z-index: 3;
     color: white;
     font-size: 30px;
@@ -10,13 +10,13 @@
 .Accounts-container {
     position: relative;
     background-color: #0F0914;
-    height: 700px;
+    height: 600px;
     width: calc(120% - 45px);
 }
 
 .Accounts-table-container {
-    position: relative;
-    top: 120px;
+    position: relative; 
+    top: 200px;
     left: 160px;
     width: 70%;
     height: 250px;

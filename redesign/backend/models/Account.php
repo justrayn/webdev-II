@@ -18,13 +18,21 @@ class Account {
         }
     }
 
-    public function getAccounts() {
+    public function getAccounts($filter = 'allaccs') {
         $query = 'SELECT * FROM ' . $this->table;
+        if ($filter === 'host') {
+            $query .= " WHERE accnttype= 'host'";
+        } elseif ($filter === 'client') {
+            $query .= " WHERE accnttype = 'client'";
+        }
         $stmt = $this->conn->prepare($query);
         if (!$stmt->execute()) {
             die("Error executing query: " . $stmt->error);
         }
         return $stmt->get_result();
     }
-}
+    
+} 
+
+
 

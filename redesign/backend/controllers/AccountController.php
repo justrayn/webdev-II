@@ -9,11 +9,14 @@ class AccountController {
     }
 
     public function index() {
-        $accounts = $this->accountModel->getAccounts();
+        $filter = isset($_GET['acc_filter']) ? $_GET['acc_filter'] : 'allaccs';
+        $accounts = $this->accountModel->getAccounts($filter);
 
         if ($accounts === false) {
             die("Error fetching accounts from the database.");
         }
+
         return $accounts;
     }
 }
+
